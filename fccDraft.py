@@ -721,6 +721,48 @@ else:
 
 
 
+# Dictionaries
+# unordered, changeable collections of data items that store values in key velue pairs.
+    # Each key within a dictionary must be unique and immutable (strings/numbers/tuples) with the associated values can be of any data type.
+    # Key Value Pairs - a data structure where a uniquer "key" is a associates with a value, much like a word (key) in a dictionary is associates with its definition (value).
+
+monthConversions = {
+    "Jan": "January",
+    "Feb": "Feburary",
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+    "Aug" : "August",
+    "Sep" : "September",
+    "Oct" : "October",
+    "Nov" : "November",
+    "Dec" : "December",
+}
+
+print(monthConversions["Mar"])
+
+print(monthConversions.get("Dec"))
+#method returns the value of the item with the specified key.
+
+
+# Get Method - Syntax Example
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
+x = car.get("price", 15000)
+
+print(x)
+
+
+# Keep in mind that youll be using key value pairs all the time to store and retrieve data in Python.
+
+
+
 
     
 
