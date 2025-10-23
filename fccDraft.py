@@ -798,6 +798,27 @@ while guess != secret_word and not(out_of_guesses):
 print("You win!")
 
 
+
+
+# For Loop
+# used for iterating over a sequence (such as a list, tuple, string, or range) or other iterable objects.
+# Allows you to execute a block of code repeatedly, once for each item in the sequence.
+
+friends = ["Jim", "Karen", "Kevin"]
+
+for index in range(lens(friends)):
+    print(index[index]) # access each friend in the list.
+# this will give me a range between zero and the number of friends in my array list. 
+
+
+# For Loop - NBA Top Scorers
+
+top_scorers = ["Shai Gilgeous-Alexander", "Luka Dončić", "Giannis Antetokounmpo", "Nikola Jokić", "Stephen Curry"]
+
+for player in top_scorers:
+    print(player)
+# this will output each player's name on a new line.
+
     
 
 
