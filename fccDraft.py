@@ -764,6 +764,18 @@ print(x)
 
 
 
+# While Loops
+# repeatedly executes a block of code as long as a specified condition remains True.
+
+i = 1
+while i < 10:
+    # code inside the while loop.
+    # code will continually run.
+    print(i)
+    i += 1
+
+
+
     
 
 
