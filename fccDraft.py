@@ -800,29 +800,37 @@ print("You win!")
 
 
 
-# For Loop
+# For Loop - FCC Example
 # used for iterating over a sequence (such as a list, tuple, string, or range) or other iterable objects.
 # Allows you to execute a block of code repeatedly, once for each item in the sequence.
+# letter is the variable.
+# "giraffe academy" is the string.
+# we are basically looping thru the entire string.
+for letter in "Giraffe Academy":
+    print(letter)
 
+
+# For Loop - looping thru an array
 friends = ["Jim", "Karen", "Kevin"]
+print(friend)
+
+
+# For Loop - looping from 1 to 10.
+for index in range(10):
+    print(index)
+
 
 for index in range(lens(friends)):
     print(index[index]) # access each friend in the list.
 # this will give me a range between zero and the number of friends in my array list. 
 
 
-# For Loop - NBA Top Scorers
-
+# For Loop - Example - NBA Top Scorers
 top_scorers = ["Shai Gilgeous-Alexander", "Luka Dončić", "Giannis Antetokounmpo", "Nikola Jokić", "Stephen Curry"]
 
+# this will output each player's name on a new line.
 for player in top_scorers:
     print(player)
-# this will output each player's name on a new line.
 
     
-
-
-
-
-
 
