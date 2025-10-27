@@ -819,6 +819,12 @@ print(friend)
 for index in range(10):
     print(index)
 
+# For Loop - running thru first iteration of the loop.
+for index in range(5):
+    if index == 0:
+        print("First Iteration")
+    else:
+        print("Not first")
 
 for index in range(lens(friends)):
     print(index[index]) # access each friend in the list.
