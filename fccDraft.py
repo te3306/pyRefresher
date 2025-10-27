@@ -836,7 +836,36 @@ top_scorers = ["Shai Gilgeous-Alexander", "Luka Dončić", "Giannis Antetokounmp
 
 # this will output each player's name on a new line.
 for player in top_scorers:
-    print(player)
+print(player)
+
+
+
+
+# Exponent Function
+# operation of raising a base number to a given power (exponent).
+# using the ':' operator: **
+# Exponent Function - Simple Math
+print(2**3)
+
+
+# Exponent Function - Complex Function
+def raise_to_power(base_num, pow_num): 
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(2, 3))
+
+
+# Exponent Function - My Example
+def raise_to_power(base_num, pow_num): 
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(100, 20)) # 2000000000000+
 
     
 
