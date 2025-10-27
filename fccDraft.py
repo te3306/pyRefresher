@@ -867,5 +867,14 @@ def raise_to_power(base_num, pow_num):
 
 print(raise_to_power(100, 20)) # 2000000000000+
 
+
+
+
+# 2d Lists and Nested Loops
+# 2D Lists = a list where each element is itself anothet list. 
+    # The structure allows for the representation of data in a tbaulat or grid like format, similiar to a matric or a spreadsheet.
+# Nested Loops = involve placing one loop inside the body of another loop. 
+    # This structure allows for repeated actions within another set of repeated actions.
+# Both for loops and while loops can be nested.
     
 
