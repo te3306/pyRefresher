@@ -1,5 +1,4 @@
 # Simple Hello World Program:
-
 print("Hello World")
 
 print("\n")
@@ -8,7 +7,6 @@ print("\n")
 
 
 # Draw A Shape:
-
 print("\n")
 
 print("     /")
@@ -23,7 +21,6 @@ print("\n")
 
 
 # Variables And Data Types:
-
 print("There once was a man named George, ")
 print("he was 70 years old. ")
 print("He really liked the name George, ")
@@ -36,7 +33,6 @@ print("\n")
 
 
 # Update Variables:
-
 character_name = "John"
 character_age = "35"
 
@@ -51,7 +47,6 @@ print("\n")
 
 
 # Working With Strings:
-
 phrase = "Giraffe Academy"
 print(phrase + " is cool.")
 
@@ -63,7 +58,6 @@ print("\n")
 # Strings + Functions:
 
 # Lower Case:
-
 phrase = "Giraffe Academy"
 print(phrase.lower())
 
@@ -73,7 +67,6 @@ print("\n")
 
 
 # Upper Case:
-
 phrase = "Giraffe Academy"
 print(phrase.upper())
 
@@ -83,7 +76,6 @@ print("\n")
 
 
 # Check If String Is Upper Or Lower:
-
 phrase = "Giraffe Academy"
 print(phrase.isupper())  #upper - will return False
 print(phrase.islower())  #lower - will return False
@@ -100,7 +92,6 @@ print(phrase.islower())
 
 
 # Upper, Lower, isupper, islower:
-
 phrase = "stephen curry"
 print(phrase.upper().isupper())
 
@@ -113,7 +104,6 @@ print("\n")
 
 
 # Length Function:
-
 phrase = "How long is this string?"
 print(len(phrase))
 
@@ -126,7 +116,6 @@ print("\n")
 
 
 # Specify The Length Of An Index:
-
 phrase= "Giraffe Academy"
 print(phrase[0])
 
@@ -142,7 +131,6 @@ print("\n")
 
 
 # Using The Index Function:
-
 phrase = "Giraffe Academy"
 print(phrase.index("G"))
 
@@ -159,7 +147,6 @@ print("\n")
 
 
 # Using The Replace Function:
-
 phrase = "To be or not to think."
 print(phrase.replace("think", "be"))
 
@@ -170,7 +157,6 @@ print("\n")
 
 
 # Working With Numbers:
-
 print(7)
 print(1.0002)
 print(100 + 3.77)
@@ -189,7 +175,6 @@ print("\n")
 
 
 # Converting Numbers To A String:
-
 my_num = 5
 print(my_num)
 
@@ -248,7 +233,6 @@ print(round(117.2)) # 117
 # Using MATH IMPORT:
 # Python commands used to import specific functions, constants, or 
 # all of the contents from the math module directly into your program's namespace.
-
 from math import *
 
 
@@ -267,8 +251,8 @@ print(sqrt(9))
 
 print("\n")
 
-# Getting Input From Users:
 
+# Getting Input From Users:
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 print("Hello " + name + "! You are " + age + " years old!")
@@ -282,8 +266,6 @@ print("Welcome " + finAnalyst1)
 # Building A Basic Calculator:
 
 # get two numbers from a user and then print them out to the screen.
-
-
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 result = num1 + num2
@@ -323,7 +305,6 @@ print(result) # 94
 # print("Roses are {color}")
 # print("{plural noun}" + " are blue")
 # print("I love " + {celwebrity}")
-
 color = input("Enter a color")
 plural_noun = input("Enter a plural noun: ")
 celebrity = input("Enter a celebrity: ")
@@ -336,7 +317,6 @@ print("I love " + celebrity)
 # Original Application
 
 # Star Trek Madlibs Application
-
 trekDivision = input("Enter your Starfleet Division: ")
 trekClass = input("Enter your Starship class: ")
 trekGalQuadrant = input("Enter your Galactic Quadrants: ")
@@ -348,7 +328,6 @@ print("Your Galactic Quadrant is " + trekGalQuadrant)
 
 
 # Lists
-
 friends = ["Kevin", "Karen", "Jim"]
 
 print(friends[1]) # Karen
@@ -356,7 +335,6 @@ print(friends[-2]) # Karen
 
 
 # modify element:
-
 friends = ["LeBron James", "Kareem Abdul Jabbar", "Michael Jordan"]
 
 friends[1] = "Stephen Curry"
@@ -467,7 +445,6 @@ print(stathamMovies2)
 
 
 # List Functions - continued:
-
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Tim"]
 
@@ -485,7 +462,6 @@ print("\n")
 # Count Function:
 # used for sequencing data types like strings, lists, and tuples. 
 # used to determine the number of times a specified element or substring appears within the sequence.
-
 greatestLinebackers1 = [50, 58, 51, 52, 56 ]
 greatestLinebackers2 = ["Mike Singletary", "Jack Lambert", "Jack Lambert", "Ray Lewis", "Lawrence Taylor"]
 print(greatestLinebackers2.count("Jack Lambert"))
@@ -563,19 +539,16 @@ new_hire("Luna Ng", "Operations")
 def cube(num):
     return num*num*num 
 
+
 # cube(3)
-
 result = cube(4)
-print(result) # error on VS Code, runs on Online Python
-# result = 64
-
+print(result) # result = 64
 
 
 
 # If Statement:
 # used for conditional execution, allowing a block of code
 # to run only if a specified condition evaluates to True.
-
 I wake up
 If I'm hungry
     I eat breakfast
@@ -602,7 +575,6 @@ otherwise
 # or statement: used to combine conditional expressions.
     # it evaluates to True if at least one of the conditions it connects is True.
 # elif: else if and is used in conditional statement to chack multiple conditions sequentially after an initial if statement.
-
 is_male = True
 is_tall = True
 
@@ -619,7 +591,6 @@ print("\n")
 
 
 # My Example - Good and Bad Student
-
 goodStudent = True
 
 if goodStudent:
@@ -631,7 +602,6 @@ print("\n")
 
 
 # My Example - Basketball Player (left/right handed)
-
 bball_player = True
 left_handed = True 
 
@@ -650,7 +620,6 @@ print("\n")
     # returns True or False.
 
 # create a function and print out the biggest number:
-
 def max_num(num1, num2, num3):
     if num1 >= num2 and num1 >= num3:
         return num1
@@ -664,7 +633,6 @@ def max_num(num1, num2, num3):
 # f-string: formatted string literals
     # provides a concise and readable way to embed expressions inside string literals.
     # Python 3.6: they are now the preferred method for string formatting.
-
 def top_scorer(player1_name, player1_points, player2_name, player2_points, player3_name, player3_points):
     if player1_points >= player2_points and player1_points >= player3_points:
         return f"{player1_name} is the top scorer with {player1_points} points."
@@ -675,13 +643,11 @@ def top_scorer(player1_name, player1_points, player2_name, player2_points, playe
 
 
 # My Example - NBA Top Scorer (copilot)
-
 print(top_scorer("Jordan", 32, "Kobe", 28, "LeBron", 35))
 # Output: LeBron is the top scorer with 35 points.
 
 
 # My Example - Highest Scorers
-
 def highest_score(score1, score2, score3):
     if score1 >= score2 and score1 >= score3:
         return score1
@@ -725,7 +691,6 @@ else:
 # unordered, changeable collections of data items that store values in key velue pairs.
     # Each key within a dictionary must be unique and immutable (strings/numbers/tuples) with the associated values can be of any data type.
     # Key Value Pairs - a data structure where a uniquer "key" is a associates with a value, much like a word (key) in a dictionary is associates with its definition (value).
-
 monthConversions = {
     "Jan": "January",
     "Feb": "Feburary",
@@ -743,11 +708,13 @@ monthConversions = {
 
 print(monthConversions["Mar"])
 
-print(monthConversions.get("Dec"))
-#method returns the value of the item with the specified key.
+print(monthConversions.get("Dec")) #method returns the value of the item with the specified key.
 
 
 # Get Method - Syntax Example
+# Key Value Pairs = unordered collections of mutable data.
+    # Each item is dictionary is a key value pair, where a unique key maps to specific value.
+# Keep in mind that youll be using key value pairs all the time to store and retrieve data in Python.
 car = {
     "brand": "Ford",
     "model": "Mustang",
@@ -759,14 +726,10 @@ x = car.get("price", 15000)
 print(x)
 
 
-# Keep in mind that youll be using key value pairs all the time to store and retrieve data in Python.
-
-
 
 
 # While Loops
 # repeatedly executes a block of code as long as a specified condition remains True.
-
 i = 1
 while i < 10:
     # code inside the while loop.
@@ -781,7 +744,6 @@ print("Done with loop!")
 
 # Building A Game
 # prompt the user for words.
-
 secret_Word = "giraffe"
 guess = ""
 guess_count = 0
@@ -818,6 +780,7 @@ print(friend)
 # For Loop - looping from 1 to 10.
 for index in range(10):
     print(index)
+
 
 # For Loop - running thru first iteration of the loop.
 for index in range(5):
