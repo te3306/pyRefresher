@@ -839,5 +839,33 @@ print(raise_to_power(100, 20)) # 2000000000000+
 # Nested Loops = involve placing one loop inside the body of another loop. 
     # This structure allows for repeated actions within another set of repeated actions.
 # Both for loops and while loops can be nested.
-    
+
+# 2D List - Access Elements
+# create list - number one thru nine.
+# print out the number 1, located at 0-0.
+# loop thru the list and print out the entire list.
+number_grid = [ 
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(number_grid[0][0])
+
+for row in number_grid:
+    for col in row:j
+    print(row)
+
+
+
+
+# 2D List - My Example
+baseball_team = [ 
+    ["Pitcher", "Catcher", "First Base"], 
+    ["Second Base", "Shortstop", "Left Field"],
+    ["Center Field", "Right Field"]
+]
+
+print(baseball_team[0][0]) # Catcher
+print(baseball_team[3][1]) # Right Field
 
