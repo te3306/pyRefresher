@@ -870,6 +870,27 @@ print(baseball_team[0][0]) # Catcher
 print(baseball_team[3][1]) # Right Field
 
 
+# define a translate function.
+# phrase will be our piece of information that we want to translate.
+    # any vowels become g's.
+# we want to loop thru every vowel in this phrase and change it to g.
+# if its not a vowel we'll leave it alone.
+# "AEIOU" will be our phrase we will be checking.
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter in "AEIOUaeiou":
+            translation = translation + "G"
+        else: 
+            translation = translation + "g"
+    return translation
+
+# allow user to input information.
+# pass whatever the user inputs.
+# we are essentially combining these statements together.
+print(translate(input("Enter a phrase: ")))
+
+
 
 
 # Sport Slang Translator
