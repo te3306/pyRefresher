@@ -869,3 +869,41 @@ baseball_team = [
 print(baseball_team[0][0]) # Catcher
 print(baseball_team[3][1]) # Right Field
 
+
+
+
+# Sport Slang Translator
+# we will create a function that takes a phrase and replaces certain letters or words with NBA or soccer-inspired terms.
+# Concepts Reinforced:
+    # Function: sports_translate() processes the input.
+    # Loop: for word in phrase.split() loops through each word.
+    # Conditionals: if/elif/else checks for matches and replaces them.
+    # String Manipulation: .split() and .strip() help clean and format the output.
+# example = "ball" -> "b[soccer icon]ll"
+# example = "run" -> "fast break"
+
+def sports_translate(phrase):
+    translation = ""
+    for word in phrase.split():
+        if word.lower() == "ball":
+            translation += "b⚽ll "
+        elif word.lower() == "run":
+            translation += "fast break "
+        elif word.lower() == "goal":
+            translation += "GOOOOOAL! "
+        elif word.lower() == "jump":
+            translation += "slam dunk "
+        else:
+            translation += word + " "
+    return translation.strip()
+
+# Ask user for input
+user_input = input("Enter a sports-related phrase: ")
+print(sports_translate(user_input))
+
+
+# Want To Level It Up:
+# replace letter with emojis.
+# add player names or team references.
+# make it case sensitive or preserve punctuation.
+# create a reverse translator to decode it back.
