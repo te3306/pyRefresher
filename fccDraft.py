@@ -928,3 +928,27 @@ print(sports_translate(user_input))
 # add player names or team references.
 # make it case sensitive or preserve punctuation.
 # create a reverse translator to decode it back.
+
+
+
+
+# Comments
+# comments are used to add explanatory notes within the code.
+    # comments are ignored by the interpreter during executiion. They serve to improve code readibility and maintability.
+
+
+# Single Line Comment:
+# this is a comment!
+
+
+# Multiple Line Comment:
+# this is a ...
+# multi line comment.
+
+
+# Triple Quoted Strings (Docstrings):
+def nvda_function(price):
+    """
+    This function takes a price value (like opening or closing price) and prints a message with that value.
+    """
+    print(f"The NVDA price you entered is: ${price}")
