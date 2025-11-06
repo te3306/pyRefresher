@@ -952,3 +952,42 @@ def nvda_function(price):
     This function takes a price value (like opening or closing price) and prints a message with that value.
     """
     print(f"The NVDA price you entered is: ${price}")
+
+
+
+# Try/Except
+# used for handling exceptions (errors) that might occur during the execution of a program.
+# this mechanism allows for graceful error handling, preventing the program from crashing and prpvoding alternative actions or informative messages when an error arises.
+
+
+# Error Handling - Part 1
+# prompt the user to enter an input command.
+# then convert that to an integer.
+# this example will throw an error:
+    # ValueError: invalid literal for int() with base 10: 'asdref'
+number = int(input("Enter a number: "))
+print(number) 
+
+
+# Error Handling - Part 2
+# here we will use try/except blocks
+try:
+    number = int(input("Enter a number: "))
+    print(number) 
+except: 
+    print("Invalid Input")
+
+
+# Basic Structure - Google
+try:
+    # Code that might raise an exception
+    # For example:
+    result = 10/0
+except ZeroDivisionError:
+    # Code to execute if a ZeroDivisionError occurs
+    print("Error: Cannot divide by zero!")
+
+
+
+
+
