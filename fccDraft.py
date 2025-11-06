@@ -974,7 +974,9 @@ print(number)
 try:
     number = int(input("Enter a number: "))
     print(number) 
-except: 
+except ZeroDivisionError: 
+        print("Divide by zero")
+except ValueError:
     print("Invalid Input")
 
 
