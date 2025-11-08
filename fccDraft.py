@@ -990,6 +990,56 @@ except ZeroDivisionError:
     print("Error: Cannot divide by zero!")
 
 
+# Reading Files:
+# To read a file in Python, the open() function is used to establish a connection to the file, and then methods like read(), readline(), or readlines() are employed to retrieve its content.
+# The with open(...) as f: statement is rec'd and safest way to handle file operations, as its automatically ensures the files is closed, even if errors occur.
 
 
+# Sample Text File - read the file.
+Jim - Salesman
+Dwight - Salesman
+Pam - Receptionist
+Michael - Manager
+Oscar - Accountant
+
+
+# "r" = read
+# "w" = write
+# "a" = append (add new information).
+# "r+" = read and write privileges.
+employee_file = open("employees.txt", "r")
+
+
+# close the file so we no longer have access to it.
+employee_file.close()
+
+
+# returns a boolean value - yes or no.
+print(employee_file.readable())
+
+
+# prints out entire contents in the file.
+print(employee_file.read())
+
+
+# prints out the first TWO lines of the file.
+print(employee_file.readline())
+print(employee_file.readline())
+employee_file.close()
+
+
+# prints out the first few lines of the file and places them into a an array.
+employee_file.readlines())
+employee_file.close()
+
+
+# loops thru the entire file and prints out each line of the file.
+employee_file = open("employees.txt", "r")
+for employee in employee_file.readlines():
+    print(employee)
+employee_file.close()
+
+
+# close the file so we no longer have access to it.
+employee_file.close()
 
