@@ -1043,3 +1043,23 @@ employee_file.close()
 # close the file so we no longer have access to it.
 employee_file.close()
 
+
+# close the file so we no longer have access to it.
+employee_file.close()
+
+
+# append or add another employee to the file:
+# you can use an escape character "\n" to the have the appended item placed on the new line.
+employee_file = open("employees.txt", "a")
+employee_file.write("Toby - Human Resources")
+employee_file.close()
+
+
+# write or replace a file:
+# you can also create a html, css, or webpage.
+employee_file = open("employees1.txt", "w")
+employee_file.write("\nKelly - Customer Service")
+employee_file.close()
+
+
+
