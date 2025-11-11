@@ -1062,4 +1062,44 @@ employee_file.write("\nKelly - Customer Service")
 employee_file.close()
 
 
+# Starting Five
+
+def get_cavs_roster():
+    # Starting Five
+    starting_five = [
+        {"name": "Lonzo Ball", "number": 2},
+        {"name": "Donovan Mitchell", "number": 45},
+        {"name": "De’Andre Hunter", "number": 12},
+        {"name": "Evan Mobley", "number": 4},
+        {"name": "Jarrett Allen", "number": 31}
+    ]
+
+    # Bench Players
+    bench_players = [
+        {"name": "Darius Garland", "number": 10},
+        {"name": "Thomas Bryant", "number": 3},
+        {"name": "Tyrese Proctor", "number": 24},
+        {"name": "Nae’Qwan Tomlin", "number": 30},
+        {"name": "Sam Merrill", "number": 5},
+        {"name": "Craig Porter Jr.", "number": 9},
+        {"name": "Jaylon Tyson", "number": 20},
+        {"name": "Larry Nance Jr.", "number": 22},
+        {"name": "Dean Wade", "number": 32},
+        {"name": "Luke Travers", "number": 8},
+        {"name": "Chris Livingston", "number": 7},
+        {"name": "Max Strus", "number": 1}
+    ]
+
+    # Append bench to starting five
+    full_roster = starting_five + bench_players
+    return full_roster
+
+
+# Example usage:
+cavs_roster = get_cavs_roster()
+for player in cavs_roster:
+    print(f"{player['name']} — #{player['number']}")
+
+
+
 
