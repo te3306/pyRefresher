@@ -1103,3 +1103,49 @@ for player in cavs_roster:
 
 
 
+# Modules and Pip
+# a module is a file containing Python definitions and statements.
+    # modules allow you to logically organize your Python into reusable units, promoting modular programming and code reusability.
+# pip is a package manager written in Python and is used to install and manage software packagaes.
+    # pip connects to an online software repository of public packages, names the Python Package index.
+
+
+# Learn Python - Sample Porgram
+# file name is UsefulTools.py
+import random
+
+# 1) variable with feet into miles.
+# 2) variable with meters into kilometers.
+# 3) variable with Beatles members.
+feet_in_mile = 5280
+meters_in_kilometer = 1000
+beatles = ["John Lennon", "Paul Harrison", "Ringo Star"]
+
+
+# function that tells you the file extension of a particular file.
+def get_file_ext(filename):
+    return filename[filename.index(".") + 1:]
+
+
+# function which simulates rolling dice. 
+def roll_dice(num):
+    return random.randint(1, num)
+
+
+# instead of copying/pasting the things we need into another file...
+# we can just import the contents of a file or the entire file using the import statement.
+import useful_tools
+
+print(useful_tools.roll_dice(10))
+
+
+# Python Module Index = https://docs.python.org/3/py-modindex.html
+# Python Docx = https://docs.python.org/3/py-modindex.html
+
+# checking if pip is installed on your terminal:
+# Linux: pip --version
+# Linux: pip install python-docx
+
+# package will be installed in the "Lib" folder inside VS Code.
+
+
