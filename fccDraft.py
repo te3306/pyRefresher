@@ -1149,3 +1149,141 @@ print(useful_tools.roll_dice(10))
 # package will be installed in the "Lib" folder inside VS Code.
 
 
+
+
+# Classes and Objects
+# class = serves as a blueprint for creating objects. it encapsulates data (attributes) and functionality (methods) into a single, cohesive unit.
+# objects = fundamental building block of data. Essentially, all data in a Python program is represented by objects, including numbers, strings, lists, functions, and even classes themselves.
+
+# create a class for a student
+# student.py file
+# we can use strings, integers, and booleans to map out what a student should be:
+class Student:
+    def __init___(self, name, major, gpa, is_on_probation):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation
+
+
+# create new app.py file
+# we can model real word objects and create data types.
+from Student    # reference: Student.py file
+import Student  # reference: Student class
+
+student1 = Student("Jim", "Business", 3.1, False)
+student2 = Student("Pam", "Art", 2.5, True)
+print(student1.name)
+print(student2.major)
+
+
+
+
+# Build A Multiple Choice Quiz
+# classes, if statements, loops, etc.
+# whats being asked + what the answer is.
+
+from Questions import Question.py
+
+question_prompts = [
+    "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
+    "What color are Bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
+    "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
+]
+
+
+questions = [
+    Question(question_prompts[0], "a"),
+    Question(question_prompts[1], "c"),
+    Question(question_prompts[2], "b"),
+]
+
+
+# ask question and store their response in a variable.
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+        score += 1  #adding one to the score.
+    print("You got " + str(score) + "/" + str(len(questions)) + "Correct!")
+
+          
+run_test(questions)
+
+
+# File: Question.py
+class Question:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+
+# Conclusion
+# How It Works:
+    # Store The Prompts:
+        # A list called "question_prompts" holds all the text for each multiple choice question. Each string includes the question itself and the possible answer choices.
+    # Ceate "Question" Objects:
+        # Each question is represented by a Question object, which stores both the prompt and the correct answer. This makes it easy to manage questions as reusable objects.
+    # Build The Quiz List:
+        # The "questions" list collects all the Questions objects. This list is what the promgram loops throubgh when running the quiz, ensuring each question is asked in order.
+    # Run The Test Loop:
+        # The run_test function iterates over the list of questions. For each one, it displays the prompt, waits for the user's input, and checks whether the response matches the correct answer.
+    # Calculate And Display The Score
+        # every time the user answers correctly, the score increases by one. At the end of the loop, the program prints the total score alongside the number of questions, giving the user a clear result.
+###This breakdown shows how your quiz flows from question storage -> object creation -> looping through questions -> checking answers -> final score output.
+
+
+# Cleveland Sports Trivia Quiz 
+# How This Works
+    # Each trivia question is stored in question_prompts with numbered choices.
+    # The questions list pairs each prompt with the correct answer(as "1", "2", or "3").
+    # The "run_test" function loops through each question, asks the user for input, and checks correctness.
+    # At the end, rhe program prints the total score out of the number of questions.
+
+
+# File: main.py
+from Question import Question
+
+# Prompts for each question
+question_prompts = [
+    "What color are the Cleveland Browns jerseys?\n"
+    "1) Pink and Teal\n"
+    "2) Green and White\n"
+    "3) Brown and Orange\n\n",
+
+    "When were the Indians (Blues/Guardians) founded?\n"
+    "1) 2025\n"
+    "2) 1968\n"
+    "3) 1901\n\n",
+
+    "Who is the Cavs all-time leader in points scored?\n"
+    "1) Zydrunas Ilgauskas\n"
+    "2) LeBron James\n"
+    "3) Daniel 'Booby' Gibson\n\n"
+]
+
+# Correct answers: Browns = 3, Guardians founded = 3, Cavs leader = 2
+questions = [
+    Question(question_prompts[0], "3"),
+    Question(question_prompts[1], "3"),
+    Question(question_prompts[2], "2"),
+]
+
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+            score += 1
+    print("You got " + str(score) + "/" + str(len(questions)) + " Correct!")
+
+run_test(questions)
+
+
+# File: Question.py
+class Question:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+
+
