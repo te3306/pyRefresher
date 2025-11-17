@@ -1317,3 +1317,107 @@ def on_honor_roll(Self):
 # Inheritance
 # allows a new class (child class or derived class) to inherit attributes and methods fro man exisiting class (parent class or base class).
     # This mechanism promotes code reusability and establishes a herarchhical "is-a" relationship between classes.
+
+
+# App.py file
+from Student import Student 
+
+student1 = Student("Oscar", "Accounting", 3.1)
+student2 = Student("Phyllis", "Business", 3.8)
+
+print(student1.on_honor_roll())
+
+
+# Student.py file - Accompanying file.
+class Student:
+    def __init__(Self, name, major, gpa):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+
+
+# define a function determining whether a student is/isnt on honor roll:
+# provides a service to the object of this class (Student):
+def on_honor_roll(Self):
+    if self.gpa >= 3.5:
+        return True
+    else:
+        return False
+
+
+# Inheritance
+# allows a new class (child class or derived class) to inherit attributes and methods fro man exisiting class (parent class or base class).
+    # This mechanism promotes code reusability and establishes a herarchhical "is-a" relationship between classes.
+
+
+# Chef.py file
+# The chef makes three distinct dishes.
+class Chef:
+
+    def make_chicken(self):
+        print("The chef makes a chicken.")
+
+    def make_salas(self):
+        print("The chef makes a salad.")
+
+    def make_special_dish(self):
+        print("The chef makes BBQ ribs.")
+
+
+
+
+#App.py file 
+# importing Chef.py file
+from Chef import Chef
+
+myChef() = Chef()
+
+
+#Run file:
+# Output: The chef makes BBQ ribs.
+from Chef import Chef
+
+myChef = Chef()
+myChef.make_special_dish()
+
+
+# I want to create a class that models a Chinese chef.
+# ChineseChef.py file:
+class ChineseChef:
+
+class Chef:
+
+    def make_chicken(self):
+        print("The chef makes a chicken.")
+
+    def make_salas(self):
+        print("The chef makes a salad.")
+
+    def make_special_dish(self):
+        print("The chef makes orange chicken.")
+
+    def make_friend_rice(self):
+        print("The chef makes fried rice.")
+
+
+#App.py file:
+# importing ChineseChef.file:
+from Chef import Chef
+from ChineseChef import ChineseChef
+
+myChef = Chef()
+myChef.make_special_dish()
+
+myChineseChef = ChineseChef()
+myChineseChef.make_special_dish()
+
+
+# now we use inheritance:
+# inside of this Chinese Chef, I want to be to use all of the functions within the Chef class.
+from Chef import Chef
+
+class ChineseChef(Chef):
+    def make_fried_rise(self):
+        print("The chef makes friend rice.")
+
+
