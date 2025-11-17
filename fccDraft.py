@@ -1287,3 +1287,33 @@ class Question:
         self.answer = answer
 
 
+
+# App.py file
+from Student import Student 
+
+student1 = Student("Oscar", "Accounting", 3.1)
+student2 = Student("Phyllis", "Business", 3.8)
+
+print(student1.on_honor_roll())
+
+
+# Student.py file - Accompanying file.
+class Student:
+    def __init__(Self, name, major, gpa):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+
+
+# define a function determining whether a student is/isnt on honor roll:
+# provides a service to the object of this class (Student):
+def on_honor_roll(Self):
+    if self.gpa >= 3.5:
+        return True
+    else:
+        return False
+
+
+# Inheritance
+# allows a new class (child class or derived class) to inherit attributes and methods fro man exisiting class (parent class or base class).
+    # This mechanism promotes code reusability and establishes a herarchhical "is-a" relationship between classes.
