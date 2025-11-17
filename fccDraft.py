@@ -1421,3 +1421,31 @@ class ChineseChef(Chef):
         print("The chef makes friend rice.")
 
 
+
+
+# Python Interpreter
+# a little enviroment where you use to execute Python commands.
+# this section will interact with the terminal or command prompt.
+# this is not an environment for SIMPLE programs, not complicated programs.
+python 3    # check if Python is installed.
+
+
+# print hello world
+print("Hello World!")
+
+
+# calculate
+num1 = 180
+num2 = 2000
+print(num1 + num2)  # result = 2180
+
+
+# function aka greeting:
+def nycGreeting(name):
+    print("Peace to the God " + name);
+
+nycGreeting("Zab Judah")
+
+
+
+
